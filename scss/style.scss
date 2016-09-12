@@ -1,1 +1,29 @@
 @import "foundation-emails";
+.bg-khaki{
+  background: $primary-color;
+}
+
+.no-bg{
+  background: transparent !important;
+}
+
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+.article-title{
+  color: $green;
+}
+
+.general-title{
+  color: $dark-gray;
+}
+
+.article-intro{
+color: $black;
+}
+
+.divider{
+  background: $gray;
+  height: 2px;
+}
