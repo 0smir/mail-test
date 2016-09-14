@@ -12,13 +12,6 @@ gulp.task('styles', function () {
         .pipe(gulp.dest('./dist/css'));
 });
 
-//CONVERTE INKY convert to inline styles without media
-// gulp.task('inky', ['styles'], function() {
-//     return gulp.src('./templates/**/*.html')
-//         .pipe(inky())
-//         .pipe(gulp.dest('./dist'));
-// });
-
 
 //CONVERTE INKY
 gulp.task('inky', function() {
@@ -33,12 +26,6 @@ gulp.task('inline', function () {
         .pipe(inlineCss())
         .pipe(gulp.dest('./dist/inlined'));
 });
-
-
-//WATCH
-// gulp.task('default',function() {
-//     gulp.watch(['./scss/*.scss', './templates/**/*.html'],['inky']);
-// });
 
 gulp.task('default',function() {
     gulp.watch('./scss/**/*.scss',['styles']);
